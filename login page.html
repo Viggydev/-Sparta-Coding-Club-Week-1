@@ -1,0 +1,51 @@
+<html>
+<head>
+    <title>My Sparta Document</title>
+    <!--CSS is written in style tag-->
+    <style>
+        /* I created this class my container */
+        /* this container sets the text colour to aqua*/
+        .mycontainer {
+            color:white;
+
+            /* For the image part */
+            /* First I gave the URL to the image */
+            background-image: url('https://www.ancient-origins.net/sites/default/files/field/image/Agesilaus-II-cover.jpg');
+            
+            /* https://developer.mozilla.org/en-US/docs/Web/CSS/background-position It makes the background in the center*/
+            background-position: center;
+            
+            /* https://developer.mozilla.org/en-US/docs/Web/CSS/background-size It covers the entire portion of the div */
+            background-size: cover;  
+            width: 208px;
+            height: 288px;
+            /* to get rounded corners*/
+            border-radius: 20px ;
+            text-align: center ;
+            padding-top: 38px;          
+        }
+        .wrap{
+            /* margin is the distance or the gap from the outside*/
+            margin: auto;
+            /*padding is the gap form the inside*/
+            width: 300 px;
+        }        
+    </style>
+</head>
+<body>
+    <!--I applied this mycontainer class to my div-->
+    <div class="wrap">
+        <div class="mycontainer">
+            <!--I Have given a class to this div-->
+            <!--Lets see how we can style this div using class name-->
+            <h1>Login Page</h1>
+            Type your ID and PW
+            
+        </div>
+        
+            <p>ID: <input type="text"></p>
+            <p>PW: <input type="password"></p>
+            <button>Login</button>
+        <div>
+</body>
+</html>

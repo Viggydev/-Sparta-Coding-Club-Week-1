@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCC | Shopping Mall</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        body {
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        #container img {
+            width: 300px;
+            border-radius: 25px;
+        }
+
+        .container2 {
+            margin-top: 20px;
+            width: 300px;
+            text-align: center;
+        }
+
+        #item {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        #price {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #555;
+        }
+
+        .price {
+            font-size: 16px;
+            color: #777;
+            margin-bottom: 20px;
+        }
+
+        .container3 {
+            margin-top: 20px;
+            width: 300px;
+            text-align: center;
+        }
+
+        .name input {
+            height: 30px;
+            width: 100%;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+
+        .mySpan {
+            background-color: rgb(192, 192, 192);
+            padding: 7px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            display: inline-block;
+            color: #333;
+        }
+
+        #btn {
+            margin-top: 20px;
+        }
+
+        .button {
+            background-color: #008CBA;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #3bb7e0;
+        }
+
+        /* Style for select dropdown */
+        select {
+            height: 30px;
+            width: 100%;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="container">
+        <img src="https://originalbotanica.com/uploads/_heroImage/best-days-of-the-week-candle-rituals.jpg" alt="Candle Image">
+    </div>
+
+    <div class="container2">
+        <h2 id="item">Sparta Candles</h2>
+        <p id="price"><strong>Price: $3 each</strong></p>
+        <p class="price"><strong>Illuminate Your Space with Power and Elegance!</strong></p>
+    </div>
+
+    <div class="container3" id="info">
+        <form action="#" onsubmit="orderPlaced(); return false;">
+            <div class="name"><span class="mySpan">Your Name</span><br><input type="text" name="myName" required></div>
+            <div class="name">
+                <span class="mySpan">Quantity</span><br>
+                <select name="myQuantity" required>
+                    <option value="" disabled selected>— Please select Quantity —</option>
+                    <option value="1">1</option>
+                    <option value="5">5</option>
+                    <option value="10">10</option>
+                    <option value="20">20</option>
+                    <option value="30">30</option>
+                    <option value="50">50</option>
+                </select>
+            </div>
+            <div class="name"><span class="mySpan">Address</span><br><input type="text" name="myAddress" required></div>
+            <div class="name"><span class="mySpan">Phone Number</span><br><input type="text" name="myPhoneNumber" maxlength="10" required></div>
+            <div id="btn">
+                <button type="submit" class="button">Order</button>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        function orderPlaced() {
+            alert("Your order is complete!");
+        }
+    </script>
+</body>
+</html>
